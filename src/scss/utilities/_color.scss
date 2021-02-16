@@ -1,0 +1,28 @@
+@for $i from 1 to 10   {
+  .bg-white-d-#{$i} {
+    background-color: darken($color: #fff, $amount: $i * 2);
+  }   
+}
+
+
+.bg-oranger-light {
+  background-color: $orange-light !important;
+}
+
+.bg-oranger-medium {
+  background-color: $orange-light !important;
+}
+
+.text-oranger-light {
+  color: $orange-light !important;
+}
+
+.text-oranger-medium {
+  color: $orange-light !important;
+}
+.text-white {
+  color: #fff !important;
+}
+.text-gray {
+  color: #6D6D6D !important;
+}

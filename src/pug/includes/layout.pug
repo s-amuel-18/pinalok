@@ -1,0 +1,17 @@
+include ./metatags_webapp.pug
+doctype html
+html(lang="es")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width,initial-scale=1")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    +metatagsWebApp()
+    block metatags
+    link(rel="stylesheet", href="./style.css")
+  body
+    block content
+    script(src="./yall.min.js")
+    script(src="./jquery.js")
+    script(src="./bootstrap.js")
+    script(src="./jquery.aniview.js")
+    script(src="./script.js")

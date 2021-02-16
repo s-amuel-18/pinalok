@@ -1,0 +1,71 @@
+.b-red {
+    border: 2px solid red;
+}
+
+.center-absolute {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.pt-NavbarSizes {
+    padding-top: 102px;
+}
+
+.pt-section {
+    transform: translateY(-102px);
+}
+
+@for $i from -1 to 12 {
+    .z-index-#{$i} {
+        z-index: $i * 1;
+    }
+}
+
+.z-index-1050 {
+    z-index: 1050;
+}
+
+.img-fit {
+    object-fit: cover;
+}
+
+.img-position-right {
+    object-position: center right;
+}
+
+.t-0 {
+    top: 0;
+}
+
+.b-0 {
+    bottom: 0;
+}
+
+.l-0 {
+    left: 0;
+}
+
+.r-0 {
+    right: 0;
+}
+
+.translateY--25p {
+    transform: translateY(-25%);
+}
+
+.br-15 {
+    border-radius: 15px;
+}
+
+.transition {
+    transition: .5s all;
+}
+
+.opacity-0 {
+    opacity: 0;
+}

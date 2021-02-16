@@ -1,0 +1,14 @@
+@mixin buttonColor($className, $backgroundColor, $color) {
+  .btn-#{$className} {
+      background-color: $backgroundColor;
+      color: $color;
+      &:hover {
+        color: $color;
+        background-color: darken($backgroundColor, $amount: 5);
+      }
+  }
+}
+
+@include buttonColor(orange-light, $orange-light, #050505);
+@include buttonColor(orange-medium, $orange-medium,#fff );
+@include buttonColor(white, $white-light,#6D6D6D );

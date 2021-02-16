@@ -1,0 +1,59 @@
+extends ../includes/layout.pug
+include ../includes/components/navbar.pug
+include ../includes/components/headerPoster.pug
+include ../includes/components/businessModal.pug
+include ../includes/components/businessPartnership.pug
+include ../includes/components/contacto.pug
+include ../includes/components/gridEquipo.pug
+include ../includes/components/footer.pug
+include ../includes/components/loader.pug
+//- include ../includes/components/picture_webp.pug
+//- include ../includes/components/youtube_video.pug
+block metatags
+  -var title = 'Feliz Desarrollo Web basado en Componentes'
+  -var description = 'Boilerplate para el desarrollo de proyectos Frontend basado en Componentes de @jonmircha'
+  title= title
+  meta(name="description", content=description)
+  meta(name="application-name", content=title)
+block content
+  //- +loader()
+  header
+  
+    +navbar(
+      [
+        ["#inicio", "inicio"],
+        ["#businessModel", "Business Model"],
+        ["#businessPartnership", "Business Partnership"],
+        ["#contacto", "Contácto"],
+        ["#equipo", "Equipo"]
+      ],
+      `logo.png`
+    )
+
+    +headerPoster("lorem lorem lorem", "Lorem ipsum dolor sit amet, consectetuer adipiscing")
+    
+
+  main
+    +businessModal()
+
+    +businessPartnership()
+
+    +contacto()
+
+    +gridEquipo()
+
+  footer
+    +footer([
+        ["#inicio", "inicio"],
+        ["#businessModel", "Business Model"],
+        ["#businessPartnership", "Business Partnership"],
+        ["#contacto", "Contácto"],
+        ["#equipo", "Equipo"]
+      ],
+      [
+        [`#`, `./img/RRSS FACE.svg`],
+        [`#`, `./img/RRSS INSTAGRAM.svg`],
+        [`#`, `./img/RRSS TWITTER.svg`],
+        [`#`, `./img/WHATSAPP.svg`],
+      ]
+    )

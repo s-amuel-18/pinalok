@@ -1,0 +1,19 @@
+mixin footer(links, socials)
+  .footer.py-5.text-gray.bg-white-d-3
+    .container
+      .row
+        .col-10.offset-1.col-md-6.offset-md-0.col-lg-4.py-0.py-lg-4
+          img(data-src="./img/logo.png", alt="").lazy.opacity-0.transition.w-200px.mw-100.mb-5
+        .col-10.offset-1.col-md-6.offset-md-0.col-lg-4.py-0.py-lg-4 
+          h3.h1.text-capitalize menu
+          ul.pl-3
+            each link in links
+              li
+                a(href=link[0]).text-gray= link[1]
+        .col-10.offset-1.col-md-6.offset-md-0.col-lg-4.py-0.py-lg-4
+          h3.h1.text-capitalize social media
+          .my-4
+            .d-flex.p-0.m-0
+              each social in socials
+                a(href=social[0]).d-block.mr-3
+                  img(data-src=social[1], alt="").lazy.opacity-0.transition.w-50px

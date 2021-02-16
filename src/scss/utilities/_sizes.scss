@@ -1,0 +1,22 @@
+@for $i from 1 to 51 {
+    .w-#{$i * 10}px {
+        width: $i * 10px !important;
+    }
+    .h-#{$i * 10}px {
+        height: $i * 10px !important;
+    }
+}
+
+.min-h-600px {
+    min-height: 500px;
+    @media (min-width: 576px) {
+        min-height: 600px;
+    }
+}
+
+.title-2 {
+    font-size: 30px;
+    @media (min-width: 768px) {
+        font-size: 60px;
+    }
+}

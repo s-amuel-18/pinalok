@@ -1,0 +1,15 @@
+mixin businessModal()
+  #businessModel
+    .container-fluid.p-0
+      .row.no-gutters
+        .min-h-600px.col-12.col-md-6.bg-white-d-2.p-5.position-relative(style="background-color: #38CCEE;")
+          img(data-src="./img/carro piña.png", alt="").lazy.position-absolute.t-0.l-0.img-fit.w-100.h-100.opacity-0.transition
+
+        .col-12.col-md-6.text-white.p-4.p-sm-5.p-lg-5.position-relative.center-absolute.flex-column.z-index-0(style="background-color: #E9B300;")
+          img(data-src="./img/fondo business bodel.png", alt="").opacity-0.transition.lazy.img-position-right.position-absolute.t-0.l-0.img-fit.w-100.h-100.z-index--1
+          .py-5.px-4.px-md-0.px-xl-5.z-index-1.animate__animated(class="aniview fast",  data-av-animation="animate__fadeInRight")
+            h2.title-2.mb-4 Business Model
+            p PIÑA LOK es un producto diseñado para agregar valor y su mentar el Cash Flow en la industria de los restaurantes y los eventos masivos. 
+            p Hemos creado y diseñado un concepto fresh & cool, único y novedoso. Definitivamente hemos llevado le experiencia de tomarte una Piña Colada al siguiente nivel. 
+            .center-absolute.mt-4
+              a(href="#").btn.btn-orange-light.btn-block Saber Más 

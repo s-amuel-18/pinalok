@@ -1,0 +1,13 @@
+mixin navbar(links, logo, contacto)
+  .fixed-top.bg-white.py-2.shadow
+    .container.d-flex.justify-content-between.align-items-center
+      .w-30px.order-1.order-md-0
+        .dropdown
+          img(src="./img/menu.svg", alt="", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")#dropdownMenuButton.dropdown-toggle.w-100.cursor-pointer
+          .dropdown-menu(aria-labelledby="dropdownMenuButton")
+            each link in links
+              a.p-2.px-3.dropdown-item(href=link[0]).text-gray= link[1]
+
+      .w-170px 
+        img(src=`./img/${logo}` , alt="").w-100
+      button.btn.btn-orange-medium.px-4.d-none.d-md-block Contáctanos

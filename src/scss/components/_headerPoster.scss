@@ -1,0 +1,13 @@
+.headerPoster {
+  @media (min-width: 768px) {
+    min-height: 400px;
+    height: 80vh;
+  } 
+
+  &-title {
+    font-size: 30px;
+    @media (min-width: 768px) {
+      font-size: 70px;
+    }
+  }
+}
