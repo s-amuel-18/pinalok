@@ -57,15 +57,42 @@
 .translateY--25p {
     transform: translateY(-25%);
 }
+.translateY--22p {
+    transform: translateY(-22%);
+}
+
+.tranlate-x-md--35 {
+    @media (min-width: 768px) {
+        transform: translateX(-35px);
+    }
+}
 
 .br-15 {
     border-radius: 15px;
 }
 
 .transition {
-    transition: .5s all;
+    transition: 0.5s all;
 }
 
 .opacity-0 {
     opacity: 0;
+}
+
+.form-control {
+    background-color: rgb(255, 255, 255) !important;
+    border-color: $orange-medium;
+    &:focus {
+        color: rgb(143, 143, 143);
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem $orange-light;
+    }
+}
+
+.outline-none {
+    outline: none !important;
+}
+
+.t-center-250 {
+    top: calc(50% - 125px);
 }

@@ -7,6 +7,7 @@ include ../includes/components/contacto.pug
 include ../includes/components/gridEquipo.pug
 include ../includes/components/footer.pug
 include ../includes/components/loader.pug
+include ../includes/components/modal.pug
 //- include ../includes/components/picture_webp.pug
 //- include ../includes/components/youtube_video.pug
 block metatags
@@ -30,7 +31,7 @@ block content
       `logo.png`
     )
 
-    +headerPoster("lorem lorem lorem", "Lorem ipsum dolor sit amet, consectetuer adipiscing")
+    +headerPoster("lorem lorem lorem", "Lorem ipsum dolor sit amet, consectetuer adipiscing", ["./img/1.png", "./img/2.png", "./img/3.png", "./img/4.png"])
     
 
   main
@@ -57,3 +58,4 @@ block content
         [`#`, `./img/WHATSAPP.svg`],
       ]
     )
+  +modal()

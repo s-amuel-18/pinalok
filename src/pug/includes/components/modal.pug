@@ -1,0 +1,24 @@
+mixin modal()
+  #exampleModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered(role='document')
+      .modal-content  
+        //- .modal-header
+        .modal-body.position-relative
+          img(data-src="./img/Recurso 1.png", alt="").lazy.h-250px.position-absolute.t-center-250.l-0.d-none.d-md-block.tranlate-x-md--35
+          button.close.outline-none(type='button' data-dismiss='modal' aria-label='Close')
+            span(aria-hidden='true') &times;
+          .row
+            .col-12.col-md-9.offset-md-3 
+              .text-center.mb-4
+                .h1.text-orange-medium Contáctanos
+                div.text-gray-light Uno de nuestros operadores te atenderá en pocos minutos
+              form(action="")
+                .text-sand-serif
+                  .form-group
+                    input(placeholder="Nombre", name="nombre").form-control
+                  .form-group
+                    input(placeholder="Telefono", name="telefono").form-control
+                  .form-group
+                    input(placeholder="Email", name="email").form-control
+                button.btn.btn-orange-medium.btn-block(type='submit') Enviar
+                

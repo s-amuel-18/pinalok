@@ -4,25 +4,21 @@
   }   
 }
 
-
-.bg-oranger-light {
-  background-color: $orange-light !important;
+.bg-white {
+  background-color: rgb(255, 255, 255) !important;
 }
-
-.bg-oranger-medium {
-  background-color: $orange-light !important;
-}
-
-.text-oranger-light {
-  color: $orange-light !important;
-}
-
-.text-oranger-medium {
-  color: $orange-light !important;
-}
+ 
 .text-white {
   color: #fff !important;
 }
 .text-gray {
   color: #6D6D6D !important;
 }
+.text-gray-light {
+  color: #a8a8a8 !important;
+}
+
+.text-orange-medium {
+  color: $orange-medium;
+}
+

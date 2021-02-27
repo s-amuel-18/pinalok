@@ -1,6 +1,13 @@
-mixin headerPoster(title, desc)
+mixin headerPoster(title, desc, imgs)
   #inicio.headerPoster.pt-NavbarSizes.center-absolute.text-gray(style="background-color: #E4E4E4;").position-relative
-    img(data-src="./img/Mesa de trabajo 60.png", alt="").lazy.position-absolute.t-0.l-0.w-100.h-100.img-fit.z-index-0.opacity-0.transition
-    .py-5.px-3.my-5.text-center.w-100.z-index-1
-      h1.headerPoster-title Lorem, ipsum dolor
-      p.w-400px.m-auto.mw-100= desc
+    #carouselExampleControls.carousel.slide.w-100.h-100(data-ride="carousel")
+      .carousel-inner
+        each img, i  in imgs
+          .carousel-item(class=`${ i === 0 ? "active" : ""}`)
+            img.d-block.w-100.lazy(data-src=img, alt="First slide")
+      a.carousel-control-prev(href="#carouselExampleControls", role="button", data-slide="prev")
+        span.carousel-control-prev-icon(aria-hidden="true")
+        span.sr-only Previous
+      a.carousel-control-next(href="#carouselExampleControls", role="button", data-slide="next")
+        span.carousel-control-next-icon(aria-hidden="true")
+        span.sr-only Next
